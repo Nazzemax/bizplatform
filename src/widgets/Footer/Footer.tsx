@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Footer.module.scss'
 
-export const Footer = () => {
+export const Footer:React.FC = ():React.JSX.Element => {
   return (
     <footer className={styles.footer}>
         <div className={styles.menu}>

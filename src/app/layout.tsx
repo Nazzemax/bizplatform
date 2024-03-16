@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/widgets/Footer"; 
-import Navigation from "./navigation/Navigation"
+import  { Navigation } from "../widgets/Header/navigation"
 const roboto = Roboto({ weight: ["400", "700","300","500"], subsets: ["latin","cyrillic"] });
 
 export const metadata: Metadata = {

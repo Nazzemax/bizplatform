@@ -1,7 +1,13 @@
-import styles from './style.module.css'
+import styles from './style.module.scss'
 import { Button } from '@/shared/ui/button'
+import Image from 'next/image'
+import ContactImg from '../../../public/contacts.png'
+import OrdersImg from '../../../public/orders.png'
+import VisitorsImg from '../../../public/visitors.svg'
+import React from 'react'
+import ProductImg from '../../../public/product.svg'
 
-const About = () => {
+export const About:React.FC = ():React.JSX.Element => {
 	return (
 		<div className={styles.aboutPlatform}>
 			<div className={styles.container}>
@@ -36,33 +42,41 @@ const About = () => {
 					<div className={styles.examples}>
 						
 					<div className={styles.example}>
-						<img
-							src='https://suplbiz-a.akamaihd.net/promotionx2/orders.png'
+						<Image
+							src={OrdersImg}
 							alt='point'
+							width={126}
+							height={119}
 						/>
 						<h2>650</h2>
 						<p>городов России и СНГ</p>
 					</div>
 					<div className={styles.example}>
-						<img
-							src='https://72328.selcdn.ru/static/about/visitors.svg'
+						<Image
+							src={VisitorsImg}
+							width={78}
+							height={120}
 							alt='point'
 						/>
 						<h2>400 000</h2>
 						<p>посетителей сайта в месяц</p>
 					</div>
 					<div className={styles.example}>
-						<img
-							src='https://suplbiz-a.akamaihd.net/promotionx2/contacts.png'
+						<Image
+							src={ContactImg}
 							alt='point'
+							width={65}
+							height={112}
 						/>
 						<h2>1 766 720</h2>
 						<p>оптовых заказов</p>
 					</div>
 					<div className={styles.example}>
-						<img
-							src='https://72328.selcdn.ru/static/about/product.svg'
+						<Image
+							src={ProductImg}
 							alt='point'
+							width={96}
+							height={120}
 						/>
 						<h2>13 863 858</h2>
 						<p>товаров в каталоге</p>
@@ -74,4 +88,4 @@ const About = () => {
 	)
 }
 
-export default About
+

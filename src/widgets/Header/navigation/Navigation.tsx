@@ -17,14 +17,14 @@ const Select = ({text,options}:{text: string, options: string[]}) => {
         </div>
     )
 }
-const Navigation = () => {
+export const Navigation:React.FC = () => {
   return (
     <div className={styles.header}>
       <header className={styles.page_header}>
         
         <div className={styles.icon}>
             <a className={styles.link} href="/ru/">
-                <span className={styles.first}>Supl</span>
+                <span className={styles.first}>IBP</span>
                 <span className={styles.second}>.biz</span>
             </a>
         </div>
@@ -70,4 +70,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+
