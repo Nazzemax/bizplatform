@@ -1,5 +1,5 @@
-import React from 'react'
 import styles from './style.module.css'
+import { Button } from '@/shared/ui/button'
 
 const About = () => {
 	return (
@@ -21,7 +21,7 @@ const About = () => {
 							Упрощаем процесс закупки, позволяем быстро находить лучших
 							поставщиков и экономить до 40%.
 						</span>
-						<button>Найти поставщиков</button>
+						<Button text='Найти поставщиков' />
 					</div>
 					<div className={styles.customers}>
 						<h2>Оптовым продавцам</h2>
@@ -29,7 +29,7 @@ const About = () => {
 							Получайте новых клиентов – ежедневно на платформе компании
 							размещают больше 1500 заказов на поиск поставщика.
 						</span>
-						<button>Найти клиентов</button>
+						<Button text='Найти клиентов' />
 					</div>
 				</div>
 				<div className={styles.statistics}>

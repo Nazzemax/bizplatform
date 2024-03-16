@@ -23,37 +23,30 @@ const Navigation = () => {
       <header className={styles.page_header}>
         
         <div className={styles.icon}>
-            <button>Supl.biz</button>
+            <a className={styles.link} href="/ru/">
+                <span className={styles.first}>Supl</span>
+                <span className={styles.second}>.biz</span>
+            </a>
         </div>
         <nav className={styles.item_nav}>
             <div className={styles.nav}>
-                <a href="" className={styles.menu_item}>Все заказы</a>
+                <a href="#" className={styles.menu_item}>Все заказы</a>
             </div>
             <div className={styles.nav}>
-                <a href="" className={styles.menu_item}>Мои заказы</a>
+                <a href="#" className={styles.menu_item}>Мои заказы</a>
             </div>
             <div className={styles.nav}>
-                <a href="" className={styles.menu_item}>Товары</a>
+                <a href="#" className={styles.menu_item}>Товары</a>
             </div>
             <div className={styles.nav}>
-                <a href="" className={styles.menu_item}>Цены на тарифы</a>
+                <a href="#" className={styles.menu_item}>Цены на тарифы</a>
             </div>
-        <Select text='Еще' options={['О платформе','Блог','Реквизиты']}/>
-            {/* <div className={styles.menu_item_d}>
-            Еще
-                <div className={styles.dropdown}>
-                    <div className={styles.dropdown_menu}></div>
-                    <div className={styles.dropdown_menu}></div>
-                    <div className={styles.dropdown_menu}></div>
-                    <div className={styles.dropdown_menu}>Купить баннер</div>
-                    <div className={styles.dropdown_menu}>Вакансии</div>
-                    <div className={styles.dropdown_menu}>СМИ о нас</div>
-                    <div className={styles.dropdown_menu}>Бонусы от партнеров</div>
-                    <div className={styles.dropdown_menu}>Помощь</div>
-                    <div className={styles.dropdown_menu}>Франшиза</div>
-                </div>
-            </div> */}
-        </nav>
+            <div className={styles.nav}>
+                <a href="#" className={`${styles.menu_item} ${styles.activeMenu}`}>О платформе</a>
+            </div>
+        <Select text='Еще' options={['Блог','Реквизиты']}/>
+ 
+
         <div className={styles.header_info}>
             <span className={styles.info}>
                 <span className={styles.blog_phone}>
@@ -62,6 +55,16 @@ const Navigation = () => {
                 <span className={styles.info}>звонок бесплатный</span>
             </span>
         </div>
+
+        <div className={styles.auth}>
+            <span>
+                <button className={styles.register}>Регистрация</button>
+                <button className={styles.login}>Логин</button>
+            </span>
+        </div>
+
+        </nav>
+        
       </header>
     </div>
   );
