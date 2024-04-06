@@ -5,8 +5,7 @@ import { Price } from "@/widgets/Price";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <About />
-      <Price />
+      
     </main>
   );
 }
